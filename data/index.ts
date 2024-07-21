@@ -1,7 +1,10 @@
+import { link } from "fs";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "DownloadCV", link: "/Roman_CV.pdf" },
+
   { name: "Contact", link: "#contact" },
 ];
 
@@ -72,35 +75,84 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Country Finder App",
+    des: "Here in this Project find the country by search, by region and also find the detial of Country",
+    img: "/Screenshot 2024-07-20 130430.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://mycountrysfinders.netlify.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Body Mass Index Calculater App",
+    des: "Here You can check your BMI In metric as well as Imperial ",
+    img: "/Screenshot 2024-07-20 130515.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://bmicalculaters.netlify.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Growth App",
+    des: "A static website a fully Responsive site",
+    img: "/Screenshot 2024-07-20 130536.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://growthapps.netlify.app/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "Go Priv",
+    des: "Go Priv is a Service Provide company I have design facial page for it",
+    img: "/Screenshot 2024-07-20 130654.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "https://gopriv.com/facials",
+  },
+  {
+    id: 5,
+    title: "Promptopia",
+    des: "This is the app where user can create the prompt and also update and delete the prompt this is full stack App made in Next js and mongoDb for database",
+    img: "/Screenshot 2024-07-20 131202.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/romankhanromii/project_promptopia_next_js",
+  },
+  {
+    id: 6,
+    title: "VideoGame",
+    des: "This is the website which is made in Chakra Ui,TypeScript,React",
+    img: "/Screenshot 2024-07-20 130352.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://imaginative-dodol-d7c021.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "HealthCare Platform",
+    des: "A comprehensive website offering top-notch healthcare services to meet all your medical needs.",
+    img: "/Screenshot 2024-07-20 141429.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://thelunaclinic.com/",
+  },
+  {
+    id: 8,
+    title: "Resturent Website",
+    des: "A delightful online destination showcasing our exquisite menu, special offers, and seamless reservation system for an unforgettable dining experience.ds.",
+    img: "/Screenshot 2024-07-20 142309.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://foodyspoint.com/",
+  },
+
+  {
+    id: 9,
+    title: "Tip Calculater App",
+    des: "A user-friendly web app for quickly and accurately calculating tips on your bill",
+    img: "/tip.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://tip-calculater-app.netlify.app/",
+  },
+  {
+    id: 10,
+    title: "Design Like Gpt",
+    des: "A user-friendly web design create in react and tailwind",
+    img: "/design.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://sunny-lily-e87182.netlify.app/",
   },
 ];
 
@@ -173,29 +225,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Engineer",
+    desc: "Frontend Engineer at K2X Tech, specializing in React.js, Tailwind CSS, React Query, and Redux",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Junior Mern Stack Developer",
+    desc: "Junior MERN Stack Developer at Priv, experienced in React.js, Node.js, Express.js, and MongoDB",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Frontend Developer",
+    desc: "Frontend Developer at Pixel Io Technology, skilled in React.js, Tailwind CSS, and Material UI",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Mern Stack Intern",
+    desc: "MERN Stack intern proficient in MongoDB, Express.js, React, and Node.js, eager to build dynamic web applications and enhance development skills.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,13 +257,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/romankhanromii",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/Romankh88096896?t=Y9wCIx0KPho670YM_v6SBg&s=09",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/romankhan1/",
   },
 ];
